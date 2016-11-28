@@ -8,8 +8,9 @@ URL:		http://flpsed.org/%{name}.html
 Source0:	http://flpsed.org/%{name}-%{version}.tar.gz
 
 BuildRequires:	fltk-devel
-BuildRequires: 	pkgconfig(x11)
+BuildRequires: 	imagemagick
 BuildRequires:	librsvg2
+BuildRequires: 	pkgconfig(x11)
 
 Requires:	ghostscript-module-X
 Suggests:	poppler
