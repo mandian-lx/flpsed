@@ -65,10 +65,9 @@ mkdir -p %{buildroot}%{_iconsdir}/hicolor/scalable/apps
 install -dm 0755 %{buildroot}/%{_miconsdir}/
 convert %{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.xpm
 
-
 # .desktop
 install -d -m 755 %{buildroot}%{_datadir}/applications/
 desktop-file-install \
 	--dir=%{buildroot}%{_datadir}/applications \
 	%{name}.desktop
-g
+
